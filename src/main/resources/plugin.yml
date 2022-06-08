@@ -1,0 +1,42 @@
+name: StartupCommands
+version: 0.0.7
+api-version: 1.16
+main: me.heymydude.startupcommands.StartupCommands
+author: Halflove, mattgd, heymydude_1
+description: A Minecraft server plugin that automatically runs commands on startup.
+
+
+commands:
+   startup:
+      description: Manage the StartupCommands plugin settings.
+      usage: /<command> [args]
+      permission: startupcommands.manage
+      aliases: [startupcommands, startupcommand, startupcmd, sc]
+   mythicdailyadmin:
+      usage: /<command>
+      description: Admin master command.
+      aliases: [ md, mdaadmin ]
+   mythichourlyadmin:
+      usage: /<command>
+      description: Admin master command.
+      aliases: [ mh, mhadmin ]
+   mythichourly:
+      usage: /<command>
+      description: Claim a reward.
+      aliases: [ mythichourly ]
+   mythicdaily:
+      usage: /<command>
+      description: Claim a reward.
+      aliases: [ mythicdaily ]
+   dailyitem:
+      usage: /<command>
+      description: mythicdailyitem Command
+      aliases: [ dailyitem ]
+   hourlyitem:
+      usage: /<command>
+      description: mythichourlyitem Command
+      aliases: [ dailyitem ]
+permissions:
+   startupcommands.manage:
+      description: Allows you to manage the StartupCommands plugin settings
+      default: op
